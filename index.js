@@ -19,7 +19,9 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
-app.use("/users", userRoutes);
+app.use("/users", (req, res) => {
+  res.send("okay");
+});
 
 // Start server
 // app.listen(port, () => {
