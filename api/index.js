@@ -11,8 +11,8 @@ app.use(express.json());
 // Routes
 app.use("/users", userRoutes);
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`Example app listening on port ${port}`);
+// });
 
 module.exports = app;
