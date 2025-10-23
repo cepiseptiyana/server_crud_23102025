@@ -9,23 +9,11 @@
 // module.exports = app; // Export the Express app
 
 const express = require("express");
-const cors = require("cors");
 const app = express();
-const port = 3001;
-
-const userRoutes = require("./routes/userRoutes");
-
-app.use(cors());
-app.use(express.json());
 
 // Routes
 app.use("/users", (req, res) => {
   res.send("okay");
 });
-
-// Start server
-// app.listen(port, () => {
-//   console.log(`Server listening at http://localhost:${port}`);
-// });
 
 module.exports = app;
