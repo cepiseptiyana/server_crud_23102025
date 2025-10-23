@@ -22,8 +22,8 @@ app.use(express.json());
 app.use("/users", userRoutes);
 
 // Start server
-app.listen(port, () => {
-  console.log(`Server listening at http://localhost:${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`Server listening at http://localhost:${port}`);
+// });
 
 module.exports = app;
